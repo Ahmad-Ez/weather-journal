@@ -1,6 +1,9 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 /* Global Variables */
 // Personal API Key for OpenWeatherMap API, not to be shared :D
-const apiKey = '51d6358b91a8237e1538c53efea749c2&units=imperial';
+const apiKey = process.env.API_KEY;
 
 /* Create a new date instance dynamically with JS */
 function checkDate() {
